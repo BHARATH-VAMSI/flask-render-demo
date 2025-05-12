@@ -1,0 +1,10 @@
+<h1>{{ mobile.name }}</h1>
+<img src="{{ mobile.image }}" width="200">
+<p>Brand: {{ mobile.brand }}</p>
+<p>Price: ₹{{ mobile.price }}</p>
+<ul>
+  {% for key, value in mobile.specs.items() %}
+    <li><strong>{{ key.capitalize() }}:</strong> {{ value }}</li>
+  {% endfor %}
+</ul>
+<a href="/">Home</a>

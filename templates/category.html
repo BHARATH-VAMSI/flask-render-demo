@@ -1,0 +1,9 @@
+<h1>Mobiles under ₹{{ price }}</h1>
+<ul>
+  {% for m in mobiles %}
+    <li>
+      <a href="/mobile/{{ m.id }}">{{ m.name }}</a> - ₹{{ m.price }}
+    </li>
+  {% endfor %}
+</ul>
+<a href="/">Back</a>
